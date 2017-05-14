@@ -1,25 +1,9 @@
-## Laravel PHP Framework
+## Catalist
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+This is a Laravel 4.2 application - please bear in mind that this version of Laravel is from several years ago and may not function well in modern environments. Laravel 4.2 was designed to work effectively under PHP5.4 (no longer supported since mid-2015) and will certainly require the mcrypt extension (deprecated in latest versions of PHP).
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+A composer update will be required to install Paypal and AWS packages.
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+Security was an important specification of this project, and there are several caveats. It should be run with a working SSL certificate to ensure confidence as the user inputs their login details. Laravel's inbuilt anti-CSRF measures have been implemented and in general authentication is required to access protected routes. Our secret file has been hosted on Amazon S3 and the app/config/aws.php file will need to be updated, returning an array containing the AWS key, secret and region: this isn't data that it's advisable to commit to github!
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
-
-## Official Documentation
-
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
-
-### Contributing To Laravel
-
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+In case the download link falls into the wrong hands it has been generated as a time-limited URL, expiring after a few minutes. If there is a possible issue of sensitive cat pictures being leaked after download, one might consider using a steganography library to encode the identity of the downloader into the image: but this is beyond the current remit of this quick project. 
